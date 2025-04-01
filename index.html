@@ -55,10 +55,6 @@
 </head>
 
 <body>
-    <div id="loading-screen">
-        <div class="spinner"></div>
-        <p>Carregando...</p>
-    </div>
     <header>
         <div class="container">
             <img src="" alt="Rei do Câmbio Logo" class="logo-placeholder">
@@ -186,18 +182,6 @@
             <p>&copy; 2024 Rei do Câmbio - Retífica | Desenvolvedor: CalzSan</p>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            setTimeout(() => {
-                const loadingScreen = document.getElementById('loading-screen');
-                loadingScreen.style.opacity = '0';
-                setTimeout(() => {
-                    loadingScreen.style.display = 'none';
-                }, 500); // Fade out transition duration
-            }, 5000); // 5 seconds
-        });
-    </script>
 </body>
 
 </html>
