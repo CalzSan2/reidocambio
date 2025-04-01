@@ -1,0 +1,203 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei do Câmbio - Retífica</title>
+    <meta name="description"
+        content="Especialistas em manutenção de câmbio manual para carros nacionais e importados. Manutenção preventiva e corretiva.">
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js" type="module"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "gsap": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+                "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script src="script.js" type="module"></script>
+    <style>
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s;
+        }
+
+        .spinner {
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+    <header>
+        <div class="container">
+            <img src="" alt="Rei do Câmbio Logo" class="logo-placeholder">
+            <h1>Rei do Câmbio - Retífica</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="demonstracoes.html">Demonstrações</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Especialistas em Câmbios Automotivos</h2>
+            <p>Manutenção, Retífica e Soluções para Câmbios Nacionais e Importados</p>
+            <a href="contato.html" class="cta-button">Solicite um Orçamento</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Com anos de experiência, somos referência em manutenção e retífica de câmbios. Nossa equipe é altamente
+                qualificada para oferecer o melhor serviço para seu veículo.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div>
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Evite problemas futuros com nosso serviço de manutenção preventiva.</p>
+                </div>
+                <div>
+                    <h3>Manutenção Corretiva</h3>
+                    <p>Solucionamos qualquer problema no seu câmbio com rapidez e eficiência.</p>
+                </div>
+                <div>
+                    <h3>Câmbios Nacionais e Importados</h3>
+                    <p>Trabalhamos com todos os tipos de câmbios, nacionais e importados.</p>
+                </div>
+                <div>
+                    <h3>Diagnóstico Avançado</h3>
+                    <p>Utilizamos equipamentos de última geração para diagnosticar problemas com precisão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento">
+        <div class="container">
+            <h2>Orçamento</h2>
+            <p><strong>Condições Especiais:</strong></p>
+            <ul>
+                <li>Trouxe o câmbio? Desmontamos sem custo para orçamento!</li>
+                <li>Não aprovou o serviço? Você tem duas opções:</li>
+                <ul>
+                    <li>Levar o câmbio desmontado.</li>
+                    <li>Pagar R$ 500,00 para montagem.</li>
+                </ul>
+                <li>Retirada do câmbio do veículo (dependendo do modelo): R$ 500,00.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="depoimentos-slider">
+                <div class="depoimento">
+                    <p>"Serviço excelente, rápido e eficiente. Recomendo!" - João Silva</p>
+                </div>
+                <div class="depoimento">
+                    <p>"Atendimento de primeira e preço justo. Muito satisfeito!" - Maria Oliveira</p>
+                </div>
+                <div class="depoimento">
+                    <p>"Profissionais qualificados e atenciosos. Resolveram meu problema rapidamente!" - Carlos
+                        Pereira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="call-to-action">
+        <div class="container">
+            <h2>Precisando de um Câmbio Novo?</h2>
+            <p>Oferecemos as melhores opções de câmbios novos e remanufaturados do mercado.</p>
+            <a href="contato.html" class="cta-button">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section id="parallax-section" class="parallax"></section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2>Nossa Equipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="path/to/team/member1.jpg" alt="Team Member 1">
+                    <h3>João Silva</h3>
+                    <p>Especialista em Câmbios Automáticos</p>
+                </div>
+                <div class="team-member">
+                    <img src="path/to/team/member2.jpg" alt="Team Member 2">
+                    <h3>Maria Oliveira</h3>
+                    <p>Técnica em Retífica de Câmbios</p>
+                </div>
+                <div class="team-member">
+                    <img src="path/to/team/member3.jpg" alt="Team Member 3">
+                    <h3>Carlos Pereira</h3>
+                    <p>Consultor Técnico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rei do Câmbio - Retífica | Desenvolvedor: CalzSan</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loading-screen');
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500); // Fade out transition duration
+            }, 5000); // 5 seconds
+        });
+    </script>
+</body>
+
+</html>

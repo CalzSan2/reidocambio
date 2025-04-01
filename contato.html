@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Rei do Câmbio - Retífica</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Important to prevent padding from increasing the input width */
+        }
+
+        #contact-form textarea {
+            height: 150px;
+        }
+
+        #contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #contact-form button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="" alt="Rei do Câmbio Logo" class="logo-placeholder">
+            <h1>Rei do Câmbio - Retífica</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="demonstracoes.html">Demonstrações</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações ou para solicitar um orçamento.</p>
+
+            <div id="contact-form">
+                <form id="orcamento-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+
+                    <button type="submit">Pedir Orçamento</button>
+                </form>
+            </div>
+
+            <div>
+                <p>Visite-nos:</p>
+                <a href="https://www.google.com/maps/place/R.+Diogo+Marques+Lucas,+17+-+S%C3%A3o+Miguel+Paulista,+S%C3%A3o+Paulo+-+SP,+Brasil" target="_blank">
+                    Rua Diogo Marques Lucas 17, São Paulo - SP
+                </a>
+            </div>
+            <div>
+                <p>Envie um e-mail:</p>
+                <a href="mailto:danieldeoliveirasebastiao@gmail.com">danieldeoliveirasebastiao@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rei do Câmbio - Retífica | Desenvolvedor: CalzSan</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('orcamento-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting in the traditional way
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = "+5511962549025"; // Seu número de telefone
+
+            const textoWhatsApp = `Olá, Rei do Câmbio! Meu nome é ${nome}. Gostaria de solicitar um orçamento.\n\nMensagem: ${mensagem}`;
+            const urlWhatsApp = `https://wa.me/${telefone}?text=${encodeURIComponent(textoWhatsApp)}`;
+
+            window.open(urlWhatsApp, '_blank'); // Abre o WhatsApp em uma nova aba
+        });
+    </script>
+</body>
+
+</html>
