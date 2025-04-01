@@ -2,23 +2,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1E1E1E; 
-    color: #D4D4D4; 
+    background-color: #1E1E1E;
+    color: #D4D4D4;
     line-height: 1.7;
     overflow-x: hidden;
 }
 
 .container {
-    width: 85%;
+    width: 95%;
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background: #252526; 
+    background: #252526;
     color: #fff;
     padding: 1.2rem 0;
-    border-bottom: #C69749 4px solid; 
+    border-bottom: #C69749 4px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 12px;
-    background: linear-gradient(to right, #C69749, transparent); 
+    background: linear-gradient(to right, #C69749, transparent);
     opacity: 0.8;
     z-index: 1;
 }
@@ -47,7 +47,7 @@ header .container {
 
 header h1 {
     margin: 0;
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-family: 'Roboto Slab', serif;
     animation: fadeIn 1s ease-in-out;
     letter-spacing: 0.5px;
@@ -58,10 +58,11 @@ header nav ul {
     margin: 0;
     list-style: none;
     display: flex;
+    flex-direction: row;
 }
 
 header nav li {
-    margin-left: 2rem;
+    margin-left: 1rem;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -72,11 +73,11 @@ header nav li:hover {
 header nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 5px;
     border: 1px solid transparent;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -89,7 +90,7 @@ header nav a::before {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: #C69749; 
+    background-color: #C69749;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
@@ -101,14 +102,14 @@ header nav a:hover::before {
 }
 
 header nav a:hover {
-    color: #C69749; 
+    color: #C69749;
     transform: translateY(-2px);
 }
 
 .logo-placeholder {
-    width: 110px;
+    width: 80px;
     height: auto;
-    margin-right: 1.2rem;
+    margin-right: 0.8rem;
     border-radius: 50%;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
@@ -119,10 +120,10 @@ header nav a:hover {
 }
 
 #hero {
-    background: linear-gradient(135deg, #34495e, #252526); 
+    background: linear-gradient(135deg, #34495e, #252526);
     color: #fff;
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
     animation: heroAnimation 2s ease-out;
     position: relative;
     overflow: hidden;
@@ -147,26 +148,26 @@ header nav a:hover {
 }
 
 #hero h2 {
-    font-size: 3.5rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 #hero p {
-    font-size: 1.6rem;
-    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
     color: #ecf0f1;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1.2rem 2.5rem;
-    background-color: #C69749; 
+    padding: 1rem 2rem;
+    background-color: #C69749;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -190,7 +191,7 @@ header nav a:hover {
 }
 
 .cta-button:hover {
-    background-color: #A87A33; 
+    background-color: #A87A33;
     transform: translateY(-4px);
 }
 
@@ -207,11 +208,11 @@ header nav a:hover {
 }
 
 #about {
-    padding: 3.5rem 0;
-    background-color: #252526; 
+    padding: 2.5rem 0;
+    background-color: #252526;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -223,7 +224,7 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path/to/subtle/noise.png') repeat; 
+    background: url('path/to/subtle/noise.png') repeat;
     opacity: 0.08;
     z-index: 0;
 }
@@ -235,24 +236,24 @@ header nav a:hover {
 
 #about h2 {
     text-align: center;
-    font-size: 2.7rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
-    color: #E06C75; 
+    color: #E06C75;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #about p {
-    font-size: 1.3rem;
-    line-height: 1.9;
-    color: #D4D4D4; 
-    padding: 0 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #D4D4D4;
+    padding: 0 1.5rem;
     text-align: justify;
 }
 
 #services {
-    padding: 4.5rem 0;
-    background: linear-gradient(to bottom, #2C2C2E, #252526); 
+    padding: 3.5rem 0;
+    background: linear-gradient(to bottom, #2C2C2E, #252526);
     position: relative;
     overflow: hidden;
 }
@@ -264,7 +265,7 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path/to/diagonal/lines.png') repeat; 
+    background: url('path/to/diagonal/lines.png') repeat;
     opacity: 0.1;
     z-index: 0;
 }
@@ -276,24 +277,24 @@ header nav a:hover {
 
 #services h2 {
     text-align: center;
-    font-size: 2.7rem;
-    margin-bottom: 2.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.7rem;
     font-family: 'Playfair Display', serif;
-    color: #E06C75; 
+    color: #E06C75;
     animation: slideInDown 1s ease-out;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.2rem;
-    padding: 0 2.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.7rem;
+    padding: 0 1.7rem;
 }
 
 .services-grid div {
-    background: #343434; 
-    padding: 2.2rem;
+    background: #343434;
+    padding: 1.7rem;
     border-radius: 12px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease-in-out;
@@ -316,22 +317,22 @@ header nav a:hover {
 }
 
 .services-grid h3 {
-    font-size: 2rem;
-    margin-bottom: 1.2rem;
-    color: #D4D4D4; 
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: #D4D4D4;
     font-family: 'Roboto', sans-serif;
 }
 
 .services-grid p {
-    font-size: 1.2rem;
-    color: #D4D4D4; 
-    line-height: 1.7;
+    font-size: 1rem;
+    color: #D4D4D4;
+    line-height: 1.5;
 }
 
 #orcamento {
-    padding: 3.5rem 0;
-    background-color: #2C2C2E; 
-    border-top: 1px solid #444; 
+    padding: 2.5rem 0;
+    background-color: #2C2C2E;
+    border-top: 1px solid #444;
     position: relative;
     overflow: hidden;
 }
@@ -343,7 +344,7 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path/to/grid/pattern.png') repeat; 
+    background: url('path/to/grid/pattern.png') repeat;
     opacity: 0.05;
     z-index: 0;
 }
@@ -355,26 +356,26 @@ header nav a:hover {
 
 #orcamento h2 {
     text-align: center;
-    font-size: 2.7rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
     animation: zoomIn 1s ease-in-out;
-    color: #E06C75; 
+    color: #E06C75;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #orcamento ul {
     list-style: disc;
-    padding-left: 22px;
+    padding-left: 17px;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    color: #D4D4D4; 
-    line-height: 1.7;
+    font-size: 1rem;
+    color: #D4D4D4;
+    line-height: 1.5;
 }
 
 #depoimentos {
-    padding: 4.5rem 0;
-    background: linear-gradient(to bottom, #252526, #2C2C2E); 
+    padding: 3.5rem 0;
+    background: linear-gradient(to bottom, #252526, #2C2C2E);
     position: relative;
     overflow: hidden;
 }
@@ -386,7 +387,7 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path/to/bokeh/lights.png') repeat; 
+    background: url('path/to/bokeh/lights.png') repeat;
     opacity: 0.12;
     z-index: 0;
 }
@@ -398,10 +399,10 @@ header nav a:hover {
 
 #depoimentos h2 {
     text-align: center;
-    font-size: 2.7rem;
-    margin-bottom: 2.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.7rem;
     font-family: 'Playfair Display', serif;
-    color: #E06C75; 
+    color: #E06C75;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -409,21 +410,21 @@ header nav a:hover {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1rem;
 }
 
 .depoimentos-slider .depoimento {
     flex: 0 0 85%;
-    margin: 0 1.2rem;
-    padding: 2.2rem;
-    background: #343434; 
+    margin: 0 1rem;
+    padding: 1.7rem;
+    background: #343434;
     border-radius: 12px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
     scroll-snap-align: start;
     text-align: center;
-    font-size: 1.3rem;
-    color: #D4D4D4; 
-    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #D4D4D4;
+    line-height: 1.6;
     position: relative;
     overflow: hidden;
 }
@@ -440,8 +441,8 @@ header nav a:hover {
 }
 
 footer {
-    padding: 1.2rem 0;
-    background: #252526; 
+    padding: 1rem 0;
+    background: #252526;
     color: #fff;
     text-align: center;
     position: relative;
@@ -452,7 +453,7 @@ footer {
 }
 
 footer .container {
-    width: 85%;
+    width: 95%;
     margin: auto;
     position: relative;
     z-index: 2;
@@ -465,7 +466,7 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path/to/carbon/fiber.png') repeat; 
+    background: url('path/to/carbon/fiber.png') repeat;
     opacity: 0.15;
     z-index: 1;
 }
@@ -515,48 +516,48 @@ footer::before {
 }
 
 #contact-form {
-    background-color: #343434; 
-    padding: 22px;
+    background-color: #343434;
+    padding: 17px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
-    margin-top: 22px;
+    margin-top: 17px;
 }
 
 #contact-form label {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    color: #D4D4D4; 
-    font-size: 1.2rem;
+    color: #D4D4D4;
+    font-size: 1rem;
 }
 
 #contact-form input[type="text"],
 #contact-form textarea {
     width: 100%;
-    padding: 9px;
-    margin-bottom: 17px;
-    border: 1px solid #555; 
+    padding: 7px;
+    margin-bottom: 13px;
+    border: 1px solid #555;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    background-color: #444; 
-    color: #D4D4D4; 
+    font-size: 1rem;
+    background-color: #444;
+    color: #D4D4D4;
 }
 
 #contact-form textarea {
-    height: 160px;
+    height: 130px;
 }
 
 #contact-form button {
-    background-color: #C69749; 
+    background-color: #C69749;
     color: #fff;
-    padding: 11px 22px;
+    padding: 9px 17px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -581,16 +582,16 @@ footer::before {
 }
 
 #contact-form button:hover {
-    background-color: #A87A33; 
+    background-color: #A87A33;
 }
 
 .demo-item {
-    margin-bottom: 22px;
-    border: 1px solid #444; 
+    margin-bottom: 17px;
+    border: 1px solid #444;
     border-radius: 10px;
-    padding: 17px;
+    padding: 13px;
     animation: fadeInUp 1s ease-out;
-    background-color: #343434; 
+    background-color: #343434;
     transition: box-shadow 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -605,8 +606,8 @@ footer::before {
     height: auto;
     border-radius: 6px;
     transition: transform 0.3s ease;
-    max-height: 200px; 
-    object-fit: cover; 
+    max-height: 150px;
+    object-fit: cover;
 }
 
 .demo-item img:hover, .demo-item video:hover {
@@ -614,11 +615,11 @@ footer::before {
 }
 
 .demo-item h3 {
-    margin-top: 12px;
-    margin-bottom: 6px;
+    margin-top: 9px;
+    margin-bottom: 5px;
     font-family: 'Playfair Display', serif;
-    color: #E06C75; 
-    font-size: 1.7rem;
+    color: #E06C75;
+    font-size: 1.4rem;
     position: relative;
 }
 
@@ -646,20 +647,22 @@ footer::before {
 
 #support-content {
     background-color: #343434;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #support-content h3 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #D4D4D4;
+    font-size: 1.3rem;
 }
 
 #support-content p {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     color: #D4D4D4;
+    font-size: 1.1rem;
 }
 
 #support-content a {
@@ -713,7 +716,7 @@ footer::before {
 
 #call-to-action {
     background-color: #2C2C2E;
-    padding: 4rem 0;
+    padding: 3rem 0;
     text-align: center;
     border-bottom: 1px solid #444;
     border-top: 1px solid #444;
@@ -728,7 +731,7 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path/to/circuit/board.png') repeat; 
+    background: url('path/to/circuit/board.png') repeat;
     opacity: 0.1;
     z-index: 0;
 }
@@ -739,17 +742,17 @@ footer::before {
 }
 
 #call-to-action h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Playfair Display', serif;
     color: #E06C75;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #call-to-action p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #D4D4D4;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .parallax {
@@ -760,19 +763,19 @@ footer::before {
 }
 
 #parallax-section {
-    height: 400px;
+    height: 300px;
     background-image: url('/master.jpg');
 }
 
 .team-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
     background-color: #252526;
 }
 
 .team-section h2 {
     text-align: center;
-    font-size: 2.7rem;
-    margin-bottom: 2.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.7rem;
     font-family: 'Playfair Display', serif;
     color: #E06C75;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -780,34 +783,57 @@ footer::before {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 0 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .team-member {
     background: #343434;
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .team-member img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .team-member h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #D4D4D4;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .team-member p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #D4D4D4;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin: 0.5rem 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
 }
